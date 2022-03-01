@@ -26,8 +26,25 @@ void displayInit() {
 void setup() {
   displayInit();
 
-  
+
 }
+bool ComparacionCodigo(char *ClaveRecibida, char *ClaveCorrecta) {
+  int ok = 0;
+
+  for (int i = 0; i < 7; i++) {
+    if (ClaveRecibida[i] == ClaveCorrecta[i]) {
+      ok++;
+    }
+  }
+  if (ok == 7) {
+    return true;
+  }
+  else {
+    return false;
+  }
+
+}
+
 
 void loop() {
 
