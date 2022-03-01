@@ -25,6 +25,8 @@ void displayInit() {
 
 void setup() {
   displayInit();
+
+  
 }
 
 void loop() {
